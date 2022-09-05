@@ -1,5 +1,8 @@
-def laske_syntymävuosi(ikä):
-    return 2022 - ikä
+import datetime
 
-def nnykyinen_vuosi():
-    return 2022
+def laske_syntymävuosi(ikä):
+    return nykyinen_vuosi() - ikä
+
+def nykyinen_vuosi():
+    tänään = datetime.date.today()
+    return tänään.year

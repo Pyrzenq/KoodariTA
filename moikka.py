@@ -1,23 +1,21 @@
 import vuodet
-# vuodet.laske_syntymävuosi()
-# vuodet.nykyinen_vuosi()
+import henkilö
 
-# from vuodet import laske_syntymävuosi, nykyinen_vuosi
-# laske_syntymävuosi(...)
-# nykyinen_vuosi()
 
 def pääfunktio():
+    syntymävuosi = 1970
+    aliisa = henkilö.Henkilö("Aliisa", 1980)
+    bob = henkilö.Henkilö(nimi="Bob", syntymävuosi=1967)
+    
+    print(aliisa.nimi)
+    print(aliisa.syntymävuosi)
+    
+    print(aliisa.ikä())
+    
     print("kutsutuaan henkiötiedot-funktiota")
-    syntymävuosi = henkilötiedot("Bob", ikä=55, lempiväri="punainen")
-    print("Palattiin funktiosta, paluuarvo:", syntymävuosi)
-
-
-def henkilötiedot(nimi, ikä, lempiväri="musta"):
-    print("Moikka, ", nimi)
-    print("Ai, olet", ikä, "vuotta vanha.")
-    print("Lempivärisi on siis", lempiväri)
-    syntymävuosi = vuodet.laske_syntymävuosi(ikä)
-    return 2022 - ikä
+    paluuarvo = bob.tiedot(lempiväri="punainen")
+    print("Palattiin funktiosta, paluuarvo:", paluuarvo)
+    print("Joku syntymävuosi:", syntymävuosi)
 
 
 pääfunktio()
