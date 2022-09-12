@@ -16,7 +16,7 @@ henkilöiden_lempivärit = {
 
 henkilöiden_lemmikit = {
     "Aliisa": ["Musti"],
-    "Bob": ["Tupu", "Hupu", "Lupu"],
+    "Bob": ["Tupu", "Hupu", "Lupu"]
 }
 
 def henkilölistaus():
