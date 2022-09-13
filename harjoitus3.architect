@@ -38,7 +38,7 @@
  </source-databases>
  <target-database id="ppdb" dbcs-ref="DS0">
   <table id="TAB3" populated="true" UUID="6befd421-969c-494d-a223-74ee00ddea4b" name="Ryhmä" objectType="TABLE" physicalName="ryhma" >
-   <remarks></remarks>
+   <remarks>Table is for the UI to populate drop down list for Opiskelija window / tab</remarks>
    <folder id="FOLTAB31" populated="true" name="Columns" physicalName="Columns" type="1">
     <column id="COL4" populated="true" UUID="2c00efac-a425-4cfe-9b05-e223c04bc481" autoIncrement="false" autoIncrementSequenceName="ryhma_nimi_seq" defaultValue="" name="Nimi" nullable="0" physicalName="nimi" precision="30" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
@@ -58,9 +58,9 @@
    </folder>
   </table>
   <table id="TAB8" populated="true" UUID="714d86a8-45d9-4e94-b487-18374fe43188" name="Valmistaja" objectType="TABLE" physicalName="valmistaja" >
-   <remarks></remarks>
+   <remarks>Table is intended to populate a drop down list in the UI</remarks>
    <folder id="FOLTAB81" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL9" populated="true" UUID="2e7b70c1-8daa-4adb-a430-98a8ad8fea6b" autoIncrement="false" autoIncrementSequenceName="valmistaja_ValmistajaID_seq" defaultValue="" name="ValmistajaID" nullable="0" physicalName="ValmistajaID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL9" populated="true" UUID="2e7b70c1-8daa-4adb-a430-98a8ad8fea6b" autoIncrement="true" autoIncrementSequenceName="valmistaja_ValmistajaID_seq" defaultValue="" name="ValmistajaID" nullable="0" physicalName="ValmistajaID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL10" populated="true" UUID="9c56292c-a879-443c-95e2-2899c46db0e9" autoIncrement="false" autoIncrementSequenceName="valmistaja_ValmistajaID_seq_1" defaultValue="" name="ValmistajaID" nullable="0" physicalName="valmistaja_id" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -78,12 +78,12 @@
    </folder>
   </table>
   <table id="TAB13" populated="true" UUID="275cbf6d-d4cd-4e2d-8580-98687515fae6" name="Opiskelija" objectType="TABLE" physicalName="opiskelija" >
-   <remarks></remarks>
+   <remarks>Basic student information</remarks>
    <folder id="FOLTAB131" populated="true" name="Columns" physicalName="Columns" type="1">
     <column id="COL14" populated="true" UUID="316100a2-c301-4d45-94b5-1b5614be39d1" autoIncrement="false" autoIncrementSequenceName="opiskelija_opiskelijanumero_seq" defaultValue="" name="Opiskelijanumero" nullable="0" physicalName="opiskelijanumero" precision="8" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL15" populated="true" UUID="9d287a68-57e1-48f8-a4a8-a8cbfdf56db3" autoIncrement="false" autoIncrementSequenceName="ryhma_nimi_seq_1" defaultValue="" name="Nimi" nullable="0" physicalName="nimi" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL15" populated="true" UUID="9d287a68-57e1-48f8-a4a8-a8cbfdf56db3" autoIncrement="false" autoIncrementSequenceName="opiskelija_nimi_seq" defaultValue="" name="Nimi" nullable="0" physicalName="nimi" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL16" populated="true" UUID="20370f2c-af74-4eea-9a21-9524794d8284" autoIncrement="false" autoIncrementSequenceName="opiskelija_etunimi_seq" defaultValue="" name="Etunimi" nullable="0" physicalName="etunimi" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -127,7 +127,7 @@
     <column id="COL27" populated="true" UUID="21461635-7f38-41bb-a350-d22246e8c37c" autoIncrement="false" autoIncrementSequenceName="tietokone_sarjanumero_seq" defaultValue="" name="Sarjanumero" nullable="0" physicalName="sarjanumero" precision="50" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL28" populated="true" UUID="653523f3-41ce-4424-994f-d967a5e459da" autoIncrement="false" autoIncrementSequenceName="malli_mallinimi_seq" defaultValue="" name="Mallinim" nullable="0" physicalName="mallinimi" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL28" populated="true" UUID="653523f3-41ce-4424-994f-d967a5e459da" autoIncrement="false" autoIncrementSequenceName="tietokone_mallinimi_seq" defaultValue="" name="Mallinim" nullable="0" physicalName="mallinimi" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -147,10 +147,10 @@
     <column id="COL32" populated="true" UUID="cc26bfc0-8804-4a43-ab50-0edf49bfb1e2" autoIncrement="true" autoIncrementSequenceName="lainaus_lainausnumero_seq" defaultValue="" name="Lainausnumero" nullable="0" physicalName="lainausnumero" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL33" populated="true" UUID="75eb4921-7f15-491b-9eb6-324a278152c0" autoIncrement="false" autoIncrementSequenceName="opiskelija_opiskelijanumero_seq_1" defaultValue="" name="Opiskelijanumero" nullable="0" physicalName="opiskelijanumero" precision="8" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL33" populated="true" UUID="75eb4921-7f15-491b-9eb6-324a278152c0" autoIncrement="false" autoIncrementSequenceName="lainaus_opiskelijanumero_seq" defaultValue="" name="Opiskelijanumero" nullable="0" physicalName="opiskelijanumero" precision="8" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL34" populated="true" UUID="794fb57b-0da6-4d00-bddd-6f839fe3692a" autoIncrement="false" autoIncrementSequenceName="tietokone_sarjanumero_seq_1" defaultValue="" name="Sarjanumero" nullable="0" physicalName="sarjanumero" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL34" populated="true" UUID="794fb57b-0da6-4d00-bddd-6f839fe3692a" autoIncrement="false" autoIncrementSequenceName="lainaus_sarjanumero_seq" defaultValue="" name="Sarjanumero" nullable="0" physicalName="sarjanumero" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL35" populated="true" UUID="0caf96a2-ae9c-49a6-a4ff-55175144ec40" autoIncrement="false" autoIncrementSequenceName="lainaus_lainauspaiva_seq" defaultValue="" name="Lainauspäivä" nullable="0" physicalName="lainauspaiva" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
@@ -205,7 +205,7 @@
     <column id="COL48" populated="true" UUID="d5096902-49da-4b99-a97b-f1cd2c0db194" autoIncrement="true" autoIncrementSequenceName="rampaivitys_paivitys_id_seq" defaultValue="" name="PäivitysID" nullable="0" physicalName="paivitys_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL49" populated="true" UUID="575f08c3-94ff-4997-b27a-cacdc8eee897" autoIncrement="false" autoIncrementSequenceName="tietokone_sarjanumero_seq" defaultValue="" name="Sarjanumero" nullable="0" physicalName="sarjanumero" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL49" populated="true" UUID="575f08c3-94ff-4997-b27a-cacdc8eee897" autoIncrement="false" autoIncrementSequenceName="rampaivitys_sarjanumero_seq" defaultValue="" name="Sarjanumero" nullable="0" physicalName="sarjanumero" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL50" populated="true" UUID="7ebf46ab-45e0-4332-ad80-b48a04c7bc03" autoIncrement="false" autoIncrementSequenceName="rampaivitys_lisays_seq" defaultValue="" name="Lisäys" nullable="0" physicalName="lisays" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -228,7 +228,7 @@
     <column id="COL54" populated="true" UUID="31cbc255-32d3-4c23-9992-4d6a50c7da21" autoIncrement="true" autoIncrementSequenceName="levypaivitys_paivitys_id_seq" defaultValue="" name="PäivitysID" nullable="0" physicalName="paivitys_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL55" populated="true" UUID="c87b9f3e-1a4a-49e2-b9dd-d8110247db28" autoIncrement="false" autoIncrementSequenceName="tietokone_sarjanumero_seq" defaultValue="" name="Sarjanumero" nullable="0" physicalName="sarjanumero" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL55" populated="true" UUID="c87b9f3e-1a4a-49e2-b9dd-d8110247db28" autoIncrement="false" autoIncrementSequenceName="levypaivitys_sarjanumero_seq" defaultValue="" name="Sarjanumero" nullable="0" physicalName="sarjanumero" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL56" populated="true" UUID="493a6bc9-4438-4f78-8a83-ef2aefd9a46d" autoIncrement="false" autoIncrementSequenceName="levypaivitys_lisays_seq" defaultValue="" name="Lisäys" nullable="0" physicalName="lisays" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
@@ -277,21 +277,21 @@ False when replaced with a new disk.</remarks>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB3" x="29" y="55" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB8" x="20" y="237" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB13" x="292" y="41" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB26" x="574" y="255" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB31" x="681" y="20" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB39" x="304" y="250" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB47" x="873" y="260" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB53" x="881" y="404" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB3" x="27" y="63" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB8" x="20" y="270" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB13" x="299" y="41" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB26" x="604" y="230" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB31" x="688" y="20" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB39" x="311" y="250" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB47" x="908" y="209" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB53" x="913" y="327" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-link relationship-ref="REL62" pkConnection="0.47368421052631576" fkConnection="0.47474747474747475" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL60" pkConnection="0.8245614035087719" fkConnection="0.36129032258064514" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL60" pkConnection="0.45614035087719296" fkConnection="0.28402366863905326" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
   <table-link relationship-ref="REL64" pkConnection="0.15976331360946747" fkConnection="0.48484848484848486" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL72" pkConnection="0.40350877192982454" fkConnection="0.5964912280701754" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL66" pkConnection="0.0" fkConnection="0.6161616161616161" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="40"/>
-  <table-link relationship-ref="REL68" pkConnection="0.5087719298245614" fkConnection="0.6619718309859155" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL70" pkConnection="0.6375545851528385" fkConnection="0.2925764192139738" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL72" pkConnection="0.2828282828282828" fkConnection="0.8421052631578947" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL66" pkConnection="0.0" fkConnection="0.6262626262626263" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="40"/>
+  <table-link relationship-ref="REL68" pkConnection="0.45614035087719296" fkConnection="0.6619718309859155" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL70" pkConnection="0.45614035087719296" fkConnection="0.5647058823529412" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
